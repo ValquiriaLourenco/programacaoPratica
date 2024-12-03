@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Recursividade</title>
+    <script>
+
+        let x= prompt('Digite um número:')
+         function fatorial(x){
+            if( x<1){
+                return 1
+            } 
+            else{
+                return x * fatorial(x-1)
+            }
+           
+         }
+         document.write(`O fatorial de ${x } é ${fatorial(x)}`)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
