@@ -1,0 +1,54 @@
+body{
+   background-color: aquamarine;
+   color: azure;
+
+}
+h1,h2{
+color: red;
+text-align: center;
+}
+h1 {
+text-transform: uppercase;
+}
+
+p{
+
+text-align: center;
+color: brown;
+}
+
+.destaque{
+background-color: chocolate;
+color:azure;
+padding: 20px;
+margin-bottom: 20px ;
+
+}
+#img-logo{
+width: 50px;
+}
+nav li{
+display: inline;
+margin-left: 20px;
+color: brown;
+font-weight:bold ;
+border: 2px solid brown; 
+padding: 5px;
+}
+nav{ 
+float:right;
+}
+header{
+background-color: dimgray;
+background-color: azure;
+color: black ;
+}
+main{
+margin: auto 10%;
+background-color: azure;
+}
+footer{
+background-color:azure;
+color: black;
+
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <title>Eleitores</title>
+</head>
+<body>
+    <script>
+        let anoVotação= Number(prompt('Digite o ano da Eleição:'))
+        let anoNasc= Number(prompt('Digite o ano do seu nascimento:'))
+        let idade= anoVotação-anoNasc
+        document.write(`Sua idade é ${idade} anos <br>`)
+        if(idade<16){
+            document.write('Você não eleitor!')
+            } else if (idade>18 && idade<65){
+            document.write('Você é eleitor obrigatório!')
+            } else {
+            document.write('Você é eleitor facultativo!')
+        }
+        
+
+
+    </script>
+</body>
+</html>
