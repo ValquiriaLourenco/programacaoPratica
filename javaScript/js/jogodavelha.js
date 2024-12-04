@@ -7,15 +7,17 @@ let coluna
 
 
 function iniciar(){
- tabuleiro=[]
+ tabuleiro=new Array(3);
  board = document.getElementById('board')
  aviso = document.getElementById('aviso')
  jogador = 1
 
  for (let i =0; i<3; i++){
-    tabuleiro[i]=[]
+    tabuleiro[i]=new Array(3);
+    for (let i =0; i<3; i++)
     for (let j=0; j<3; j++){
-        tabuleiro[i][j]=0
+        tabuleiro[i][j]=0;
+        exibir();
     }
     
  }
@@ -26,24 +28,30 @@ function iniciar(){
 }
 
 function exibir(){
-    let tabela ='<table cellpadding="10" border="1"'
+    let tabela ='<table cellpadding="10" border="1">';
 
     for( let i=0; i<3; i++){
-         tabela += '<tr>'
+         tabela += '<tr>';
 
-         for(let j = 0; i<3; j++){
+         for(let j = 0; j<3; j++){
 
-            switch()
+            switch(tabuleiro[i][j]){
+                case -1:marcador ='X'; break;
+                case 1:marcador ='O'; break;
+                default: '_'
+                
+            }
+            tabela += '<td>' + marcador + '</td>'
 
          }
 
          for( let j=0; j<3; j++){
-            tabela += '<td>_</td>'
+            tabela += '<td>_</td>';
          }
-          tabela += '</tr>'
+          tabela += '</tr>';
         }
     
-      tabela += '</table>'
+      tabela += '</table>';
 
       board.innerHTML= tabela
 }
@@ -61,10 +69,9 @@ function jogar(){
     }
 
 
-    tabuleiro[linha][coluna]=
-    console.log(linha,coluna);
-
+  console.table(tabuleiro)
     jogador++
+    exibir()
 }
 
 function checar(){
