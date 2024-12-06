@@ -8,6 +8,7 @@ header{
 }
 
 section{
+    border: 2px dashed black;
     background-color:white;
     border-radius: 10px;
     padding: 50px;
